@@ -1,0 +1,38 @@
+.sc-bcXHqe{
+    border: none;
+    max-width: 100% !important;
+    height: 120px !important;
+    background-color: #b9e8ff;
+    border:2px dashed rgb(0, 140, 183) !important;
+}
+.lkjDVC{
+
+}  
+.sc-dkrFOg{
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center;
+} 
+.dmajdp{
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center;
+}
+.bXgVCj span{
+    text-decoration: none !important;
+}
+ .bXgVCj{
+    display: none !important;
+}
+.sc-bcXHqe svg{
+    display: none !important;
+}
+.dmajdp .file-types::before{
+    max-width: 100%;
+    overflow:visible;
+    content: "Drop and Upload Document From here: ";
+}
+.dmajdp .file-types{
+    max-width: 100% !important;
+    overflow: visible;
+}

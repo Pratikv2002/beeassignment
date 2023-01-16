@@ -1,0 +1,13 @@
+.SignInDiv{
+    width: 400px;
+  border-radius: 10px;
+  padding: 45px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 910px) {
+    .SignInDiv{
+        width: 330px;
+        padding: 25px;
+    }
+  } 

@@ -1,0 +1,131 @@
+header{
+    box-shadow: 0px 0px 3px grey;
+}
+.menu-div2{
+    text-align: center;
+    list-style: none;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   
+}
+
+.logo{
+    text-decoration: none;
+   
+}
+.logo-name{
+    color: red;
+    padding: 0px 30px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.menu{
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.menu li{
+    list-style: none;
+    padding: 5px 20px;
+}
+
+.navItem{
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(91, 91, 91);
+}
+.menu-div{
+    position: relative;
+}
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #fb1056;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fb1056;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  .menu-div{
+    display: none;
+  }
+  /* menu btn */
+  .header.menu-icon{
+    display: none;
+  }
+  .header .menu-btn {
+    display: none;
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  @media screen and (min-width: 910px) {
+    .headerDiv2{
+        display: none;
+    }
+  } 
+  
+@media screen and (max-width: 910px) {
+    .menu-div{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-btn{
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px
+    }
+    .menu{
+        display: none;
+    }
+  }
